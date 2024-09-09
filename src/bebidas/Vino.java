@@ -6,5 +6,9 @@ public class Vino extends Bebida{
 	public TiposVino tipoVino;
 	
 	@Override
-	public final void beber() {}
+	public final void beber() {
+		if (totalVasosVino % 7 == 0) {
+			reciclar();
+		}
+	}
 }
