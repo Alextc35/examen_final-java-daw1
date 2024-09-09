@@ -10,9 +10,6 @@ public abstract class Bebida implements BebidasAccion{
 	private int referencia;
 	private static int totalRecicladas = 0;
 	
-	public Bebida() {
-		this.totalRecicladas += 1; 
-	}
 	
 	@Override
 	public void reciclar() {}
