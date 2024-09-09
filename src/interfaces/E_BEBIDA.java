@@ -18,7 +18,7 @@ public enum E_BEBIDA implements CaloriasBebidas, PreciosBebidas {
 		this.preciosBebidas = preciosBebidas;
 	}
 	
-	public int getCaloria() {
+	public int getCalorias() {
 		return caloriasBebidas; 
 	}
 	
