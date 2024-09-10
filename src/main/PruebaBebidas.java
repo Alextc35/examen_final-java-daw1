@@ -3,39 +3,49 @@ import bebidas.*;
 import interfaces.*;
 import java.util.*;
 
-
 public class PruebaBebidas {
 
 	public static void main(String[] args) {
 		
-		for (int i = 0; i < 2; i++) {
-			new Mahou();
-		}
+		// Cervezas
+		Mahou mahou1 = new Mahou();
+		Mahou mahou2 = new Mahou();
+		EstrellaGalicia estrella1 = new EstrellaGalicia();
+		EstrellaGalicia estrella2 = new EstrellaGalicia();
 		
-		for (int i = 0; i < 2; i++) {
-			new EstrellaGalicia();
-		}
+		// Beber cervezas
+		mahou1.beber();
+		mahou2.beber();
+		estrella1.beber();
+		estrella2.beber();
 		
+		// Mostrar el número total de cervezas bebidas
+		System.out.println("------------------------------------------");
+		System.out.println("Total cervezas bebidas: " + Cerveza.totalCervezas);
+		System.out.println("------------------------------------------");
+		System.out.println("\tCervezas Mahou bebidas: " + Mahou.totalMahou);
+		System.out.println("\tCervezas Estrella Galicia bebidas: " + EstrellaGalicia.totalEstrellaGalicia);
+		
+		// Crear instancias de vinos aleatorios
+		Vino[] vinos = new Vino[50];
 		TiposVino[] tiposVino = TiposVino.values();
 		
-		ArrayList<Bebida> bebidas = new ArrayList<>();
-		
-		for (int i = 0; i < 50; i++) {
-			int aleatorio = (int) (Math.random() * tiposVino.length);
-			bebidas.add(new Vino(tiposVino[aleatorio]));
+		for (int i = 0; i < vinos.length; i++) {
+			int aleatorio = (int)(Math.random() * tiposVino.length);
+			TiposVino tipoAleatorio = tiposVino[aleatorio];
+			Vino vino = new Vino(tipoAleatorio);
+			vino.beber();
 		}
 		
+		// Copas de Vino bebidas y botellas recicladas
+		System.out.println("\n------------------------------------------");
+		System.out.println("Total copas de vino bebidas: " + Vino.totalVasosVino);
+		System.out.println("------------------------------------------");
 		
-		for (int i = 0; i < bebidas.size(); i++) {
-			System.out.println(bebidas.get(i));
-			Bebida vino = bebidas.get(i);
-			
-			if (bebidas.get(i).toString().equals("Vino " + TiposVino.BLANCO)) {
-				System.out.println("Entró");
-			}
-			
-		}
+		Vino.mostrarCopasPorTipo();
 		
+		System.out.println("------------------------------------------");
+		Vino.mostrarReciclaje();
 	}
 	
 }

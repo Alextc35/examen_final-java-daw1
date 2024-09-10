@@ -6,12 +6,12 @@ public class EstrellaGalicia extends Cerveza{
 	public static int totalEstrellaGalicia = 0;
 	
 	public EstrellaGalicia() {
-		beber();
+		super(E_BEBIDA.ESTRELLA_GALICIA);
 	}
 	
 	@Override
 	public final void beber() {
-		this.totalCervezas++;
+		super.beber();
 		this.totalEstrellaGalicia++;
 	}
 }
