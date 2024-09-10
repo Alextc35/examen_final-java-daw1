@@ -21,17 +21,22 @@ public abstract class Bebida implements BebidasAccion{
 		return (int)(Math.random() * 999);
 	}
 	
+	// Para vinos
+	public static void reciclarVino() {
+		totalRecicladas++;
+	}
+	
+	// Para cervezas
 	@Override
 	public void reciclar() {
 		this.totalRecicladas++;
 	}
 	
+	public int getReferencia() {
+		return referencia;
+	}
+	
 	public static int getTotalRecicladas() {
 		return totalRecicladas;
 	}
-	
-	public static void reciclarVino() {
-		totalRecicladas++;
-	}
-	
 }

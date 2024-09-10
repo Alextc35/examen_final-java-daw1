@@ -1,8 +1,14 @@
 package interfaces;
 
 public enum E_BEBIDA implements CaloriasBebidas, PreciosBebidas {
+	
+	// Lista de las Bebidas
+	
+	// Cervezas
 	MAHOU(CaloriasBebidas.MAHOU, PreciosBebidas.MAHOU),
 	ESTRELLA_GALICIA(CaloriasBebidas.ESTRELLA_GALICIA, PreciosBebidas.ESTRELLA_GALICIA),
+	
+	// Vinos
 	BLANCO(CaloriasBebidas.BLANCO, PreciosBebidas.BLANCO),
 	TINTO(CaloriasBebidas.TINTO, PreciosBebidas.TINTO),
 	ROSADO(CaloriasBebidas.ROSADO, PreciosBebidas.ROSADO),

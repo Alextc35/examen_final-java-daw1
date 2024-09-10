@@ -1,6 +1,7 @@
 package interfaces;
 
 public enum TiposVino {
+	
 	BLANCO,
 	TINTO,
 	ROSADO,
@@ -8,6 +9,4 @@ public enum TiposVino {
 	DULCE,
 	VERMUT;
 
-	
-	
 }

@@ -1,7 +1,9 @@
 package main;
-import bebidas.*;
-import interfaces.*;
-import java.util.*;
+import bebidas.Cerveza;
+import bebidas.Mahou;
+import bebidas.EstrellaGalicia;
+import bebidas.Vino;
+import interfaces.TiposVino;
 
 public class PruebaBebidas {
 
@@ -42,10 +44,9 @@ public class PruebaBebidas {
 		System.out.println("Total copas de vino bebidas: " + Vino.totalVasosVino);
 		System.out.println("------------------------------------------");
 		
-		Vino.mostrarCopasPorTipo();
+		Vino.getCopasPorTipo();
 		
 		System.out.println("------------------------------------------");
-		Vino.mostrarReciclaje();
+		Vino.getReciclaje();
 	}
-	
 }
