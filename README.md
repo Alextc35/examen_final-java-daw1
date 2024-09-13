@@ -43,5 +43,5 @@ Se ha implementado una colección donde se introducen cervezas de manera aleator
 Se crea una estructura de carpetas para la colección de cervezas, donde se organizan en directorios `MAHOU` y `ESTRELLA`. Cada cerveza tiene un archivo `.txt` cuyo nombre corresponde a la referencia de la cerveza.
 
 ## Notas Finales
-Este proyecto ha sido desarrollado conforme a las especificaciones del examen final de la asignatura Programación I. Para cualquier duda, revisa la clase `PruebaBebidas.java`, donde se detallan los ejemplos y pruebas solicitadas.
+Este proyecto ha sido desarrollado conforme a las especificaciones del examen final de la asignatura Programación I. Para cualquier duda, revisa las clases `PruebaBebidas.java`, `PruebasEjercicio2`, `PruebasEjercicio3` y `PruebasEjercicio4`, donde se detallan los ejemplos y pruebas solicitadas.
 
