@@ -7,6 +7,7 @@ import interfaces.BebidaGenerica;
 import interfaces.TiposVino;
 
 public class PruebasEjercicio2 {
+	
 	public static void main(String[] args) {
 		BebidaGenerica<Mahou> mahou = new BebidaGenerica<>(new Mahou());
 		mahou.servirBebida();

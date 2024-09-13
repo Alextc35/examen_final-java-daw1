@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PruebasEjercicio3 {
+	
 	public static void main(String[] args) {
 		List<Bebida> bebidas = new ArrayList<>();
 		bebidas.add(new Mahou());
