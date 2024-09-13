@@ -1,5 +1,7 @@
 package main;
-import bebidas.*;
+import bebidas.Mahou;
+import bebidas.EstrellaGalicia;
+import bebidas.Vino;
 import interfaces.BebidaGenerica;
 import interfaces.TiposVino;
 
