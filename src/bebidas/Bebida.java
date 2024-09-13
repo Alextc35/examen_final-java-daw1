@@ -39,4 +39,10 @@ public abstract class Bebida implements BebidasAccion{
 	public static int getTotalRecicladas() {
 		return totalRecicladas;
 	}
+
+	@Override
+	public String toString() {
+		return "Bebida [bebida=" + bebida + ", precio=" + precio + ", calorias=" + calorias + ", referencia="
+				+ referencia + "]";
+	}
 }
