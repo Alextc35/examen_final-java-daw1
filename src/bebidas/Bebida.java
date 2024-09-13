@@ -1,4 +1,5 @@
 package bebidas;
+
 import interfaces.BebidasAccion;
 import interfaces.E_BEBIDA;
 
@@ -30,6 +31,14 @@ public abstract class Bebida implements BebidasAccion{
 	@Override
 	public void reciclar() {
 		this.totalRecicladas++;
+	}
+	
+	public int getCalorias() {
+		return calorias;
+	}
+	
+	public double getPrecio() {
+		return precio;
 	}
 	
 	public int getReferencia() {

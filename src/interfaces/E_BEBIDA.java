@@ -25,7 +25,7 @@ public enum E_BEBIDA implements CaloriasBebidas, PreciosBebidas {
 	}
 	
 	public int getCalorias() {
-		return caloriasBebidas; 
+		return caloriasBebidas;
 	}
 	
 	public double getPrecios() {

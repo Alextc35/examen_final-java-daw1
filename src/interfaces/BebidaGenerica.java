@@ -1,4 +1,5 @@
 package interfaces;
+
 import bebidas.Bebida;
 
 public class BebidaGenerica<T extends Bebida> {
