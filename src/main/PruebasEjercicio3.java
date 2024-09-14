@@ -18,7 +18,7 @@ public class PruebasEjercicio3 {
 		bebidas.add(new EstrellaGalicia());
 		bebidas.add(new Vino(TiposVino.TINTO));
 		
-		System.out.println(bebidas + "\n");
+		System.out.println(bebidas);
 		ProcesadorBebidas.procesarBebidas(bebidas);
 	}
 }

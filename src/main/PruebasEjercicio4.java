@@ -33,7 +33,7 @@ public class PruebasEjercicio4 {
 		new File(mahouDirectory).mkdirs();
 		new File(estrellaDirectory).mkdirs();
 		
-		System.out.println("Cervezas ordenadas por numero de referencia:");
+		System.out.println("\t - Cervezas ordenadas por numero de referencia -");
 		for (Map.Entry<Integer, Cerveza> cerveza : cervezas.entrySet()) {
 			System.out.println("Referencia: " + cerveza.getKey() + "\n\t" + cerveza.getValue().toString());
 			

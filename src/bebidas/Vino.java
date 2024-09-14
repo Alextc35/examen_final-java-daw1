@@ -39,14 +39,25 @@ public class Vino extends Bebida{
 	}
 	
 	public static void getReciclaje() {
-		for (Map.Entry<TiposVino, Integer> entry : botellasRecicladasPorTipo.entrySet()) {
-			System.out.println("Total botellas recicladas de " + entry.getKey().name() + ": " + entry.getValue());
+		for (Map.Entry<TiposVino, Integer> vino : botellasRecicladasPorTipo.entrySet()) {
+			System.out.println("Total botellas recicladas de " + formatearTiposVino(vino.getKey().name()) + ": " + vino.getValue());
 		}
 	}
 	
 	public static void getCopasPorTipo() {
-		for (Map.Entry<TiposVino, Integer> entry : copasPorTipo.entrySet()) {
-			System.out.println("\tCopas bebidas de " + entry.getKey().name() + ": " + entry.getValue());
+		for (Map.Entry<TiposVino, Integer> vino : copasPorTipo.entrySet()) {
+			System.out.println("\tCopas bebidas de " + formatearTiposVino(vino.getKey().name()) + ": " + vino.getValue());
 		}
-	}	
+	}
+	
+	public static String formatearTiposVino(String tipoVino) {
+		if (tipoVino == null || tipoVino.isEmpty()) {
+			return tipoVino;
+		} return tipoVino.substring(0, 1).toUpperCase() + tipoVino.substring(1).toLowerCase();
+	}
+	
+	@Override
+	public String toString() {
+		return "Vino " + formatearTiposVino(tipoVino.toString());
+	}
 }

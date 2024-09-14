@@ -15,7 +15,7 @@ public class ProcesadorBebidas {
 			precioTotal += bebida.getPrecio();
 		}
 		
-		System.out.println("Calorias totales: " + caloriasTotales);
-		System.out.println("Precio total: " + precioTotal);
+		System.out.println("- Calorias totales: " + caloriasTotales);
+		System.out.println("- Precio total: " + precioTotal);
 	}
 }

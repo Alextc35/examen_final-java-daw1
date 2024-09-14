@@ -51,7 +51,6 @@ public abstract class Bebida implements BebidasAccion{
 
 	@Override
 	public String toString() {
-		return "Bebida [bebida=" + bebida + ", precio=" + precio + ", calorias=" + calorias + ", referencia="
-				+ referencia + "]";
+		return bebida.toString();
 	}
 }

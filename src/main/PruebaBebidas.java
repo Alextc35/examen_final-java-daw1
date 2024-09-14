@@ -24,10 +24,10 @@ public class PruebaBebidas {
 		
 		// Mostrar el número total de cervezas bebidas
 		System.out.println("------------------------------------------");
-		System.out.println("Total cervezas bebidas: " + Cerveza.totalCervezas);
+		System.out.println("Total de cervezas bebidas: " + Cerveza.totalCervezas);
 		System.out.println("------------------------------------------");
-		System.out.println("\tCervezas Mahou bebidas: " + Mahou.totalMahou);
-		System.out.println("\tCervezas Estrella Galicia bebidas: " + EstrellaGalicia.totalEstrellaGalicia);
+		System.out.println("\tCervezas de Mahou bebidas: " + Mahou.totalMahou);
+		System.out.println("\tCervezas de Estrella Galicia bebidas: " + EstrellaGalicia.totalEstrellaGalicia);
 		
 		// Crear instancias de vinos aleatorios
 		Vino[] vinos = new Vino[50];
@@ -42,11 +42,10 @@ public class PruebaBebidas {
 		
 		// Copas de Vino bebidas y botellas recicladas
 		System.out.println("\n------------------------------------------");
-		System.out.println("Total copas de vino bebidas: " + Vino.totalVasosVino);
+		System.out.println("Total de copas de vino bebidas: " + Vino.totalVasosVino);
 		System.out.println("------------------------------------------");
 		
 		Vino.getCopasPorTipo();
-		
 		System.out.println("------------------------------------------");
 		Vino.getReciclaje();
 	}

@@ -15,4 +15,9 @@ public class Mahou extends Cerveza{
 		super.beber();
 		this.totalMahou++;
 	}
+	
+	@Override
+	public String toString() {
+		return "Mahou";
+	}
 }

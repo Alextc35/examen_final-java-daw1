@@ -15,4 +15,9 @@ public class EstrellaGalicia extends Cerveza{
 		super.beber();
 		this.totalEstrellaGalicia++;
 	}
+	
+	@Override
+	public String toString() {
+		return "Estrella Galicia";
+	}
 }
